@@ -1,4 +1,4 @@
-FROM cloudbees/cloudbees-core-agent:2.346.4.1
+FROM cloudbees/cloudbees-core-agent:2.361.1.2
 
 USER root
 
