@@ -13,6 +13,7 @@ pipeline {
       steps {
         containerBuildPushGeneric("agent") {
           checkout scm
+          gitShortCommit()
         }
       }
     }
