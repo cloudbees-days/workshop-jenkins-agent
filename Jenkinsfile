@@ -8,7 +8,7 @@ pipeline {
     stage("Build and Push Image") {
       when { buildingTag() }
       environment {
-        IMAGE_TAG = ${TAG_NAME}
+        IMAGE_TAG = "${TAG_NAME}"
       }
       steps {
         containerBuildPushGeneric("agent") {
